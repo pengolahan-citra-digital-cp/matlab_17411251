@@ -1,0 +1,11 @@
+g = imread('F:/2019/CITRA/dedaunan.png');
+gray= rgb2gray(g);
+a = edge(gray,'canny');
+b = edge(gray,'sobel');
+c = edge(gray,'roberts');
+d = edge(gray,'prewitt');
+subplot (2,3,1); imshow(g);
+subplot (2,3,2); imshow (a);
+subplot (2,3,3); imshow (b);
+subplot (2,3,4); imshow (c);
+subplot (2,3,5); imshow (d);
